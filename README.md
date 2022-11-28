@@ -16,6 +16,12 @@ To be accepted for upload to the data folder on Ucloud, the data **must** comply
 
 - [x] If model was adjusted during intial differential expression analysis, remove replaceable variable: `DESeq2object$replaceable <- NULL`
 
+### Prerequisites for running the app on Ucloud: ###
+- Have R with packages listed in the app.R script installed in a Drive names "Software" in the Group project.
+- Make a folder such as /Software/Shiny_RNAseq and place the app.R script here. 
+- Make a folder named data and place it in /Software.
+- Place all DESeq2 objects with data to be shared in the /data folder 
+
 ### Running the app on Ucloud with predetermined or user-specified settings: ###
 Open Ucloud and start a Shiny application [here](https://cloud.sdu.dk/app/jobs/create?app=shiny&version=4.2.0)
 ### Predetermined:
