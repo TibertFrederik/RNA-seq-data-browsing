@@ -20,7 +20,11 @@ To be accepted for upload to the data folder on Ucloud, the data **must** comply
 - Have R with packages listed in the app.R script installed in a Drive named "Software" in your Group project.
 - Make a folder such as /Software/Shiny_RNAseq and place the app.R script here. 
 - Make a folder named data and place it in /Software.
-- Place all DESeq2 objects with data to be shared in the /data folder 
+- Place all DESeq2 objects with data to be shared in the /data folder
+- In app.R change:
+-- path line 26 to the correct path to your data
+-- path line 91 to the correct path to your data  
+-- url line 176 to a database on e.g. sharepoint that contains information about your data
 
 ### Running the app on Ucloud with predetermined or user-specified settings: ###
 Open Ucloud and start a Shiny application [here](https://cloud.sdu.dk/app/jobs/create?app=shiny&version=4.2.0)
